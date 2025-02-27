@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E          &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_ALT
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
+&kp TAB     &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp LCTRL   &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E          &kp I    &kp O          &kp SQT
+&sys_reset  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA      &kp DOT  &kp FSLH       &sys_reset
+                          &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
             >;
         };
 
@@ -58,4 +58,5 @@
         };
     };
 };
+
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
