@@ -1,17 +1,20 @@
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+&spi0 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>; // Add if needed
+    pinctrl-1 = <&spi0_sleep>;   // Add if needed
+    pinctrl-names = "default", "sleep"; // Add if needed
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; // Add if needed
+};
 
 &nice_view_spi {
     status = "okay";
     nice_view: ls0xx@0 {
         compatible = "sharp,ls0xx";
-        spi-max-frequency = <1000000>;
-        reg = <0>;
-        width = <160>;
-        height = <68>;
+        spi-max-frequency = ;
+        reg = ;
+        width = ;
+        height = ;
     };
 };
 
