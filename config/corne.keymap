@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
-&bt BT_CLR_ALL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E          &kp I    &kp O          &kp SQT
-&sys_reset      &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA      &kp DOT  &kp FSLH       &sys_reset
-                              &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp LEFT_CONTROL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E          &kp I    &kp O          &kp SQT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA      &kp DOT  &kp FSLH       &sys_reset
+                                &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BACKSPACE
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8         &kp N9     &kp N0  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans         &trans     &trans  &kp RIGHT_ALT
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp BACKSPACE
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7          &kp N8          &kp N9           &kp N0  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN        &kp UP          &kp RIGHT        &trans  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp RIGHT_ALT
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans          &kp BACKSPACE
             >;
         };
 
