@@ -21,7 +21,7 @@ Personal ZMK firmware configuration for my Corne (CRKBD) split keyboard.
 
 *Auto-generated from [`corne.keymap`](config/corne.keymap)*
 
-**Legend:** `▽` = Transparent (uses key from lower layer), `L#` = Momentary layer switch
+**Legend:** `▽` = Transparent (uses key from lower layer), `✕` = None (no action), `L#` = Momentary layer switch
 
 ### Layer_0
 ```

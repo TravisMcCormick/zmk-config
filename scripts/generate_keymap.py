@@ -169,7 +169,7 @@ def generate_markdown(keymap_path: str) -> str:
     output.append("")
     output.append(f"*Auto-generated from [`{Path(keymap_path).name}`](config/{Path(keymap_path).name})*")
     output.append("")
-    output.append("**Legend:** `▽` = Transparent (uses key from lower layer), `L#` = Momentary layer switch")
+    output.append("**Legend:** `▽` = Transparent (uses key from lower layer), `✕` = None (no action), `L#` = Momentary layer switch")
     output.append("")
     
     for layer_name, bindings in layers.items():
