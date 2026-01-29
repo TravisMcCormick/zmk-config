@@ -46,7 +46,7 @@ KEY_DISPLAY = {
     # System
     "sys_reset": "Reset", "bootloader": "Boot",
     # Transparent/None
-    "trans": "▽", "none": "✕",
+    "trans": "▽", "none": "X",
 }
 
 
@@ -169,7 +169,10 @@ def generate_markdown(keymap_path: str) -> str:
     output.append("")
     output.append(f"*Auto-generated from [`{Path(keymap_path).name}`](config/{Path(keymap_path).name})*")
     output.append("")
-    output.append("**Legend:** `▽` = Transparent (uses key from lower layer), `✕` = None (no action), `L#` = Momentary layer switch")
+    output.append("**Legend:**")
+    output.append("- `▽` = Transparent (uses key from lower layer)")
+    output.append("- `X` = None (no action)")
+    output.append("- `L#` = Momentary layer switch")
     output.append("")
     
     for layer_name, bindings in layers.items():
