@@ -1,0 +1,33 @@
+name: Update README Keymap
+
+on:
+  push:
+    paths:
+      - 'config/*.keymap'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate keymap visualization
+        run: |
+          python scripts/generate_keymap.py config/corne.keymap README.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git diff --quiet README.md || (git add README.md && git commit -m "docs: update keymap visualization")
+          git push
